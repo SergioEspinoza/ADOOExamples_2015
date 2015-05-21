@@ -1,0 +1,34 @@
+INCLUDE =../include
+CC=gcc
+CFLAGS=-I$(IDIR)
+
+OUTPUT_DIR=obj
+LIB_DIR =lib
+
+TARGETS+= chinese
+TARGETS+= russian
+TARGETS+= european
+TARGETS+= example
+
+include russian.mk
+include european.mk
+include chinese.mk
+
+EXAMPLE_OBJS += hello_example.o
+
+EXAMPLE_OBJS_OUT = $(patsubst %,$(OUTPUT_DIR)/%,$(OBJS))
+
+all: $(TARGETS)
+
+example: $(EXAMPLE_OBJS_OUT)
+	gcc -o $@ $^ $(CFLAGS)
+
+
+.PHONY: clean
+clean:
+	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
+
+
+$(OUTPUT_DIR)/%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
