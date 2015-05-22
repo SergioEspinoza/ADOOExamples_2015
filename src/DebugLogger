@@ -1,0 +1,19 @@
+/**
+ * Project Untitled
+ */
+
+
+#include "DebugLogger.h"
+
+/**
+ * DebugLogger implementation
+ */
+
+
+/**
+ * @param msg
+ * @return int
+ */
+int DebugLogger::logDebug(string msg) {
+    return 0;
+}
