@@ -1,0 +1,19 @@
+/**
+ * Project Untitled
+ */
+
+
+#include "ErrorLogger.h"
+
+/**
+ * ErrorLogger implementation
+ */
+
+
+/**
+ * @param msg
+ * @return int
+ */
+int ErrorLogger::errorLog(string msg) {
+    return 0;
+}
