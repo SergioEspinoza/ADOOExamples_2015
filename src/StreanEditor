@@ -1,0 +1,43 @@
+/**
+ * Project Untitled
+ */
+
+
+#include "StreamEditor.h"
+
+/**
+ * StreamEditor implementation
+ */
+
+
+/**
+ * @param filename 
+ * @return int
+ */
+int StreamEditor::open(string filename ) {
+    return 0;
+}
+
+/**
+ * @param filename 
+ * @return int
+ */
+int StreamEditor::close(string filename ) {
+    return 0;
+}
+
+/**
+ * @param filename 
+ * @return int
+ */
+int StreamEditor::read(string filename ) {
+    return 0;
+}
+
+/**
+ * @param filename 
+ * @return int
+ */
+int StreamEditor::write(string filename ) {
+    return 0;
+}
