@@ -1,0 +1,19 @@
+/**
+ * Project Untitled
+ */
+
+
+#include "WarningLogger.h"
+
+/**
+ * WarningLogger implementation
+ */
+
+
+/**
+ * @param msg
+ * @return int
+ */
+int WarningLogger::warningLog(string msg) {
+    return 0;
+}
