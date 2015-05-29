@@ -1,0 +1,30 @@
+
+
+Procedimiento practica diagrama de edos. / diagrama de clases
+
+Avance para proximo martes:
+
+
+Procedimiento para generar ejecutable con maquina de edos.
+
+1. Generar codigo de herramienta web fw profile
+2. Ubicar carpeta de destino en ADOOExamples_2015/src/TCP_FSM
+3. Agregar archivo *.zip en ADOOExamples_2015/src/TCP_FSM
+4. Descomprimir archivos dentro de carpeta (no generar carpeta adicional)
+5. Abrir linea de comandos y dirigirse a ADOOExamples_2015/src/TCP_FSM/
+6. Ubicar archivo 'Makefile' y correr comando make. Verificar salida de error del programa make (no va a compilar correctamente).
+7. Editar archivos generados con la herramienta para aniadir metodos faltantes ( *.c ) 
+8. Editar archivo 'Makefile' y correr de nuevo comando 'make' hasta tener una compilacion exitosa.
+
+El procedimiento anterior debera generar un ejecutable usando los 2 archivos generados por la herramienta. Este ejemplo no tendra ninguna funcionalidad.
+
+Procedimiento para generar ejecutable con Diagrama de Clases.
+
+1. Exportar codigo de la herramienta utilizada (archivos *.cpp y *.hpp).
+2. Ubicar/ crear carpeta de destino ADOOExamples_2015/src/ADOO_Class y copiar codigo generado.
+3. Anadir Makefile. Hacer copy paste de Makefile ubicado en ADOOExamples_2015/src/TCP_FSM/
+4. Editar makefile para anadir regla adicional para compilar codigo generado.
+5. Generar archivo main.cpp si la herramienta no lo genero.Usar ADOOExamples_2015/src/main.cpp como ejemplo.
+6. Correr make desde carpeta ADOOExamples_2015/src/ADOO_Class
+7. Editar archivos generados / main.cpp en caso de error y repetir paso 6 hasta lograr una compilacion exitosa.
+
