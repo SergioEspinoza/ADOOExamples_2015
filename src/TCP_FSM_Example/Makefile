@@ -42,13 +42,16 @@ ADOO_FSM_OBJS_OUT=$(patsubst %,$(OUTPUT_DIR)/%,$(ADOO_FSM_OBJS))
 TARGETS+=fc1lib.so
 TARGETS+=adoo_fsm
 
-all: $(TARGETS)
+all: dirs $(TARGETS)
 
 fc1lib.so: $(FC1LIB_OBJS_OUT)
 	$(CC) $(CFLAGS) --shared -o $@ $^ 
 
 adoo_fsm: $(ADOO_FSM_OBJS_OUT)
 	$(CC) $(CFLAGS) -lpthread fc1lib.so -o $@ $^ 
+
+dirs:
+	mkdir -p obj
 
 
 .PHONY: clean
